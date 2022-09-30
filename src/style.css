@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+body{
+  background: black;
+}
+nav{
+  display: flex;
+}
+button{
+  padding: 0.7rem 0.7rem;
+  margin: 0.5rem;
+  background-color: black;
+  color: rgba(241, 238, 238, 0.791);
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  box-shadow: 0 5px #999;
+  font-size: larger;
+}
+button:active {
+  background-color: black;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+#content {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(241, 238, 238, 0.791);
+  border: 5px solid black;
+  border-radius: 1rem;
+}
+/* body{
+  background: url('./background_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.title {
+  padding: 3rem;
+  margin: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 36vw;
+  border: 5px solid black;
+  border-radius: 1rem;
+  max-width: 700px;
+  font-size: x-large;
+  font-weight: 300;
+}
+
+.about_us,.hours,.location,.menuItem {
+  text-align: left;
+  padding: 0rem 3rem;
+  font-size: medium;
+  text-align: center;
+}
+
+#headline {
+  text-align: center;
+}
+
+#image{
+  min-width: 100px;
+  max-width: 200px;
+  background: black;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 700px;
+}
+
+.menuItemTitle {
+  width: 36vw;
+  border: 5px solid black;
+  border-radius: 1rem;
+  padding: 5vh 4vw;
+  font-size: x-large;
+}
+.mainItemTitle {
+  font-size: x-large;
+  font-weight: 400;
+  border: 5px solid black;
+  border-radius: 1rem;
+  padding: 1vw;
+  background: black;
+  color: rgba(241, 238, 238, 0.791);
+}
+@media screen and (max-width: 1000px) {
+  #content,.title,.menuContainer,.menuItemTitle {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin: 0;
+  }
+}
